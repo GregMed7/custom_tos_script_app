@@ -42,7 +42,7 @@ for i in range(-4, 5):
 
 # -- EMAs
 df["EMA_10"] = df[close_col].ewm(span=10).mean()
-df["EMA_20"] = df[close_col].ewm(span=20).mean()
+df["EMA_50"] = df[close_col].ewm(span=50).mean()
 
 # -- Filter to 1 year
 df = df[df.index >= df.index.max() - pd.DateOffset(years=1)]
@@ -85,9 +85,9 @@ fig.add_trace(go.Scatter(
     line=dict(color="red", width=2)
 ))
 fig.add_trace(go.Scatter(
-    x=df.index, y=df["EMA_20"],
+    x=df.index, y=df["EMA_50"],
     mode="lines",
-    name="EMA 20",
+    name="EMA 50",
     line=dict(color="skyblue", width=2)
 ))
 
