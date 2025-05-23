@@ -23,7 +23,7 @@ def inertia(close_series, length=252):
 
 # -- Ticker selection
 tickers = ["SPY", "QQQ", "SCHD", "VICI", "KO", "TGT", "TSM", "O", "LOW", "HSY", 
-           "AAPL", "TSLA", "SBUX", "ADC", "V", "CVX", "MSFT", "LMT"]
+           "AAPL", "TSLA", "SBUX", "ADC", "V", "CVX", "MSFT", "LMT", "MSTX"]
 selected_ticker = st.selectbox("Choose a ticker", tickers)
 
 # -- Data download
