@@ -1,6 +1,6 @@
 📈 Stock Technical Setup Viewer
 
-Link Below: Please give it a few seconds to get up!
+Please give it a few seconds to get up!
 https://tos-se-bands.streamlit.app/
 
 A lightweight Streamlit app to chart stocks using a custom technical indicator with standard error bands.
